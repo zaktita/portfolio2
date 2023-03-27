@@ -1,0 +1,17 @@
+.footer{
+    border-top: 1px solid var(--text);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.icon{
+    color: var(--text);
+    font-size: 20px;
+}

@@ -1,0 +1,162 @@
+
+.atom {
+    height:400px;
+    width:300px;
+    transform-style:preserve-3d;
+    perspective:1000px;
+  }
+
+ 
+
+  .nucleus {
+	content: "";
+	width: 70%;
+	height: 70%;
+	padding-bottom: 40%;
+	transform: translate(-50%, -50%);
+	transform-origin: 50% 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* animation: rotateWithOrbit 6s infinite linear; */
+	background-image: url('../../assetes/New\ Project.png');
+	background-image: radial-gradient(circle at top left, red, darken(red, 15%) 75%);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+  .electron {
+    position:absolute;
+    left:50%;
+    top:50%;
+    border:1px solid #ccc;
+    border-radius:50%;
+    height:300px;
+    width:300px;
+    transform:translate(-50%, -50%) rotateY(40deg) rotate(0deg);
+    transform-style:preserve-3d;
+    transform-origin:50% 50%;
+    z-index:0;}
+
+    
+    .electron:before {
+        content:"";
+        width:20%;
+        height:0;
+        padding-bottom:20%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform-origin:50% 50%;
+        position:absolute;
+        /* border-radius:50%; */
+        top:0;
+        left:50%;
+        background-image:radial-gradient(circle at top left, #94ffaf, darken(#94ffaf, 25%) 75%); 
+    }
+/* create orbit */
+    .e1{
+    animation:orbit1 12s infinite linear;
+    transform:translate(-50%, -50%) rotateY(85deg) rotateX(0deg);
+}
+    .e2{
+    animation:orbit2 6s infinite linear;
+    transform:translate(-50%, -50%) rotateY(0deg) rotateX(85deg); 
+}
+    .e6{
+    animation:orbit2 8s infinite linear;
+    transform:translate(-50%, -50%) rotateY(0deg) rotateX(85deg); 
+}
+    .e3{
+    animation:orbit1 6s infinite linear;
+    transform:translate(-50%, -50%) rotateY(45deg) rotateX(0deg); 
+}
+    .e4{
+    animation:orbit3 6s infinite linear;
+    transform:translate(-50%, -50%) rotateY(-45deg) rotateX(-45deg); 
+}
+    .e5{
+    animation:orbit3 10s infinite linear;
+    transform:translate(-50%, -50%) rotateY(-45deg) rotateX(-45deg); 
+}
+/* create the image for every electron */
+.e1::before{
+    background-image: url('../../assetes/vscode-icons_file-type-css.png');
+    animation:rotateWithOrbit1 12s infinite linear;
+    
+}
+.e2::before{
+    background-image: url('../../assetes/fa-brands_elementor.png');
+    animation:rotateWithOrbit2 6s infinite linear;
+}
+.e6::before{
+    background-image: url('../../assetes/react-logo.png');
+    animation:rotateWithOrbit2 8s infinite linear;
+}
+.e3::before{
+    background-image: url('../../assetes/ic_outline-wordpress.png');
+    animation:rotateWithOrbit1 6s infinite linear;
+}
+.e4::before{
+    background-image: url('../../assetes/logos_javascript\(1\).png');
+    animation:rotateWithOrbit3 6s infinite linear;
+    
+}
+.e5::before{
+    background-image: url('../../assetes/logos_figma.png');
+    animation:rotateWithOrbit3 6s infinite linear;
+}
+
+
+/* orbite animations */
+
+@keyframes orbit1 {
+    0% {
+      transform:translate(-50%, -50%) rotateY(60deg) rotateX(-30deg) rotate(0deg) ;}
+    
+    100% {
+      transform:translate(-50%, -50%) rotateY(60deg) rotateX(-30deg) rotate(360deg) ;
+    }
+  }
+  
+  @keyframes rotateWithOrbit1 {
+    0% {transform:translate(-50%, -50%) rotateZ(0deg) rotateX(30deg)  rotateY(-40deg) scale(.80);}
+  25% {transform:translate(-50%, -50%) rotateZ(-90deg) rotateX(30deg) rotateY(-40deg) scale(.60);}
+  50% {transform:translate(-50%, -50%) rotateZ(-180deg) rotateX(30deg) rotateY(-40deg) scale(.80);}
+  75% {transform:translate(-50%, -50%) rotateZ(-270deg) rotateX(30deg) rotateY(-40deg) scale(1);}
+  100% {transform:translate(-50%, -50%) rotateZ(-360deg) rotateX(30deg) rotateY(-40deg) scale(.80);}
+  }
+  
+  @keyframes orbit2 {
+    0% {
+      transform:translate(-50%, -50%) rotateY(60deg) rotateX(30deg) rotate(180deg) ;}
+    
+    100% {
+      transform:translate(-50%, -50%) rotateY(60deg) rotateX(30deg) rotate(540deg) ;
+    }
+  }
+  
+  @keyframes rotateWithOrbit2 {
+    0% {transform:translate(-50%, -50%) rotateZ(-180deg) rotateX(-30deg)  rotateY(-40deg) scale(.80);}
+  25% {transform:translate(-50%, -50%) rotateZ(-270deg) rotateX(-30deg) rotateY(-40deg) scale(1);}
+  50% {transform:translate(-50%, -50%) rotateZ(-360deg) rotateX(-30deg) rotateY(-40deg) scale(.80);}
+  75% {transform:translate(-50%, -50%) rotateZ(-450deg) rotateX(-30deg) rotateY(-40deg) scale(.60);}
+  100% {transform:translate(-50%, -50%) rotateZ(-540deg) rotateX(-30deg) rotateY(-40deg) scale(.80);}
+  }
+  
+  
+  @keyframes orbit3 {
+    0% {
+      transform:translate(-50%, -50%) rotateY(0deg) rotateX(75deg) rotate(180deg) ;}
+    
+    100% {
+      transform:translate(-50%, -50%) rotateY(0deg) rotateX(75deg) rotate(540deg) ;
+    }
+  }
+  
+  @keyframes rotateWithOrbit3 {
+    0% {transform:translate(-50%, -50%) rotateZ(-180deg) rotateX(-80deg)  rotateY(0deg) scale(1);}
+  25% {transform:translate(-50%, -50%) rotateZ(-270deg) rotateX(-80deg) rotateY(0deg) scale(.8);}
+  50% {transform:translate(-50%, -50%) rotateZ(-360deg) rotateX(-80deg) rotateY(0deg) scale(.60);}
+  75% {transform:translate(-50%, -50%) rotateZ(-450deg) rotateX(-80deg) rotateY(0deg) scale(.80);}
+  100% {transform:translate(-50%, -50%) rotateZ(-540deg) rotateX(-80deg) rotateY(0deg) scale(1);}
+  }

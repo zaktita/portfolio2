@@ -1,0 +1,88 @@
+.hero{
+
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .hero_section{
+        display: grid;
+        gap: 30px;
+}
+
+    .img_wrapper {
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+    .img_wrapper::before {
+        position: absolute;
+        content: '';
+        width: 70%;
+        height: 140%;
+        border-radius: 50%;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(177, 108, 234, 0.5) 0%, rgba(86, 123, 255, 0.235) 100%);
+        filter: blur(125px);
+    }
+
+
+
+.hero_section h1{
+    color: var(--text);
+    font-weight: 700;
+    font-size: var(--h1);
+    line-height: 125%;
+}
+.hero_section h1 span{
+    background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero_section p{
+    color: var(--light-grey);
+    width: 70%;
+    margin: auto;
+}
+
+.hero_section button{
+    padding: calc(var(--btn-txt)*0.5) calc(var(--btn-txt)*1.3);
+border-radius: 50px;
+font-weight: 600;
+font-size: var(--btn-txt);
+line-height: 22px;
+text-transform: uppercase;
+}
+
+.btn_fill{
+    background: linear-gradient(90deg, #B16CEA 14.06%, #6B5EFF 44.79%, #567BFF 71.87%, #4BD4FF 100%);
+    border: none;
+    color: var(--text);
+    cursor: pointer;
+    border-radius: 30px;
+}
+.btn_fill:hover{
+    background: linear-gradient(var(--dark), var(--dark)) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+outline: 4px solid darkorchid;
+color:#B16CEA;
+}
+
+.btn_border{
+  background: linear-gradient(var(--dark), var(--dark)) padding-box,
+              linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
+  color:#B16CEA;
+  cursor: pointer;
+}
+.btn_border:hover{
+    background: linear-gradient(90deg, #B16CEA 14.06%, #6B5EFF 44.79%, #567BFF 71.87%, #4BD4FF 100%);
+    border: none;
+    color: var(--text);
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}

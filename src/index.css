@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;200;700&display=swap'); */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root{
+    --dark:#161513;
+    --dark-blue:#1C1C22;
+    --text : #fff;
+    --light-grey : #e5e7e9;
+    --gradient : linear-gradient(90deg, #B16CEA 14.06%, #6B5EFF 44.79%, #567BFF 71.87%, #4BD4FF 100%);
+    --h1 : 4vw;
+    --h2 : calc(var(--h1)*0.8);
+    --h3 : calc(var(--h2)*0.8);
+    --h4 : calc(var(--h3)*0.8);
+    --h5 : calc(var(--h4)*0.8);
+    --big-para : 32px;
+    --mobile-big-para : 24px;
+    --para : 18px;
+    --btn-txt : 1.2vw;
 }
