@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio2/static/css/main.6271eb8a.css",
+    "main.js": "/portfolio2/static/js/main.0006629a.js",
+    "static/media/schoolartballet.png": "/portfolio2/static/media/schoolartballet.5aa222d14dc7526ab97d.png",
+    "static/media/skyrt.png": "/portfolio2/static/media/skyrt.224db83d2452e2866a2c.png",
+    "static/media/monbagage.jpg": "/portfolio2/static/media/monbagage.1df2c3580d99c68d7f9a.jpg",
+    "static/media/skyrt.jpg": "/portfolio2/static/media/skyrt.bf6b2e4584511ed9a499.jpg",
+    "static/media/New Project.png": "/portfolio2/static/media/New Project.204f60fc00ddee230b96.png",
+    "static/media/hello.png": "/portfolio2/static/media/hello.1cc600fe34a1913d90e9.png",
+    "static/media/BaiJamjuree-Light.ttf": "/portfolio2/static/media/BaiJamjuree-Light.e818fb7a908b8cd26055.ttf",
+    "static/media/BaiJamjuree-Regular.ttf": "/portfolio2/static/media/BaiJamjuree-Regular.b6013786559eeb4c3543.ttf",
+    "static/media/BaiJamjuree-Bold.ttf": "/portfolio2/static/media/BaiJamjuree-Bold.da1cfc75e1ff64984f88.ttf",
+    "static/media/piano.png": "/portfolio2/static/media/piano.b7774fd4efbcfc5f3168.png",
+    "static/media/light_bulb.png": "/portfolio2/static/media/light_bulb.491f634bc56ff4a67c7a.png",
+    "static/media/clock.png": "/portfolio2/static/media/clock.670dc9168914b60ecf1d.png",
+    "static/media/book.png": "/portfolio2/static/media/book.2cdf7d822c598dca2fc0.png",
+    "index.html": "/portfolio2/index.html",
+    "main.6271eb8a.css.map": "/portfolio2/static/css/main.6271eb8a.css.map",
+    "main.0006629a.js.map": "/portfolio2/static/js/main.0006629a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6271eb8a.css",
+    "static/js/main.0006629a.js"
+  ]
+}
